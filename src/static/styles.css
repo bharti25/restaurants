@@ -1,0 +1,173 @@
+*{margin: 0 auto; padding: 0px; outline: none; text-decoration: none; list-style: none;}
+/*--------------------Begin Attache font family edited -----------------*/
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../static/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../static/fonts/Roboto-Regular.woff") format("woff"),
+      url("../static/fonts/Roboto-Regular.ttf") format("truetype"),
+      url("../static/fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+        font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url("../static/fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../static/fonts/Roboto-Medium.woff") format("woff"),
+      url("../static/fonts/Roboto-Medium.ttf") format("truetype"),
+      url("../static/fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Roboto-Light";
+    src: url("../static/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+      url("../static/fonts/Roboto-Light.woff") format("woff"),
+      url("../static/fonts/Roboto-Light.ttf") format("truetype"),
+      url("../static/fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url("../static/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../static/fonts/Roboto-Bold.woff") format("woff"),
+      url("../static/fonts/Roboto-Bold.ttf") format("truetype"),
+      url("../static/fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*--------------------End Attache font family------------------*/
+  
+  /*--------------------Begin Common CSS------------------*/
+  body {font-family: "Roboto-Regular";overflow-x: hidden; color: #5e6677;letter-spacing: 0.3px;}
+  .container {max-width: 1200px; margin: 0 auto;}
+  /*--------------------End Common CSS------------------*/
+  
+  /*--------------------Begin Header Section CSS------------------*/
+  header {padding: 5px 0px; border-bottom: 1px solid #e0e0e0; -webkit-transition: all 0.3s ease; -moz-transition: position 10s; -ms-transition: position 10s; -o-transition: position 10s; transition: all 0.3s ease;}
+  header img {width: 50px;}
+  .srch_section input[type="search"] {width: 96px; border: 1px solid #e0e0e0; padding: 4px 30px 4px 14px; font-size: 14px; line-height: 16px; border-radius: 66px; margin: 0 4px 0 0; height: 38px; transition: all 0.5s ease; position: absolute; top: -5px; right: 0;}
+  input[type="search"]:hover {border: 1px solid #ccc;}
+  input[type="search"]:focus {width: 250px; border: 1px solid #ccc;}
+  .srch_section::before {position: absolute; content: ''; top: 3px; right: -14px; background: #a4a4a4; width: 1px; height: 20px;}
+  .btn.login {background-color: #e33a25; float: right; color: #FFF; margin-top: 7px;}
+  
+  /*--------------------Begin Banner Section CSS-----------------------*/
+  .banner_content {top: 50%; left: 0; 
+    /* transform: translateY(-50%);  */
+    background: rgba(255, 255, 255); padding: 64px; border-radius: 10px; box-shadow: 0 0 4px #ccc; transition: all 0.5s ease;}
+  .banner_center_text {max-width: 1200px; left: 50%; width: 100%; position: absolute; top: 140%; transform: translate(-50%, -50%); z-index: 9;}
+  .banner_center_text h1 {
+      /* font-family: 'PalatinoLinotype-Bold';  */
+    font-size: 50px; line-height: 76px; color: #222; font-weight: bold; margin-bottom: 24px; transition: all 0.5s ease;}
+  .banner_content p {font-size: 18px; line-height: 22px; color: #222; margin-bottom: 42px;}
+  .banner_srch_box {height: 52px; background: #fff; transition: all 0.5s ease; border: 1px solid #ccc; border-radius: 10px;}
+  .banner_srch_box input {width: 100%; border: none; background: transparent; padding: 0 35px; height: 52px; font-size: 15px; line-height: 20px; position: absolute;}
+  .banner_srch_box button {top: 0px; right: 0px; height: 52px; width: 70px; background: #0babbf; border: none; cursor: pointer;}
+  .banner_srch_box button i {color: #fff;font-size: 20px;line-height: 22px;}
+  .banner_srch_box .fas.fa-search {margin-top: 18px; position: relative; margin-left: 10px; color: #bfb6b6;}
+  
+  /*-----------------------Begins Detail Page CSS------------------------*/
+  .detail_page {background: #fafafa;}
+  .detail_page .banner_section {/* background: url(../static/images/10.jpg); */ background: #282c3f; height: 235px; }
+  .detail_page .content_section h1 {font-size: 32px; color: #fff; font-family: "Roboto-Bold"; transition: all 0.5s ease;}
+  .detail_page .detail_page_img img {width: 100%;}
+  button.button {font-size: 14px; line-height: 16px; color: #003fd4; transition: all 0.5s ease;}
+  button.button:hover {color: #4e76d4;}
+
+  /*--------------------------Begin Salon List CSS--------------------------------*/
+  .restaurant_list .restaurant_list_content {padding: 30px;}
+  .restaurant_list .main_content .content_section{margin-top: 16%; padding-top: 60px;}
+  .restaurant_list .ribbon_top span {background: #da4453; color: #fafafa; padding: 6px 14px; font-size: 12px; line-height: 16px; position: relative;}
+  .restaurant_list .ribbon_top span:after {position: absolute; content: ''; border-top: 7px solid #c7303f; border-left: 6px solid transparent; border-right: 6px solid transparent; top: 24px; left: 0px; transform: rotate(232deg);}
+  .restaurant_list .ribbon_top {top: 12px; left: -8px;}
+  .restaurant_list .rest_list_content .star-rating {background: #48c479; display: inline-block; padding: 2px 4px; margin: 0; font-size: 15px; line-height: 20px; float: right;}
+  .restaurant_list .rest_list_content .star-rating label {margin: 0px; color: #fff;}
+  .restaurant_list .rest_list_content .star-rating .star span {font-size: 13px; margin: 0 0 0 3px;}
+  .restaurant_list .rest_list_content .list_heading h4 {font-size: 20px; line-height: 22px; color: #222; font-family: "Roboto-Medium"; width: 80%; float: left;}
+  .restaurant_list .list_heading span {font-size: 14px; float: right;width: 20%;}
+  .restaurant_list .list_headign_left {float: left; width: 100%;}
+  .restaurant_list .list_img img {width: 100%;}
+  .restaurant_list .rest_list_content {border: 1px solid #e0e0e0; padding: 16px; height: 180px;}
+  .restaurant_list .list_headign_left p {font-size: 14px; line-height: 18px; font-family: "Roboto-Light";}
+  .restaurant_list .list_btm_text p {margin-bottom: 0px; width: 100%; float: left;}
+  .restaurant_list .list_btm_text p label {width: 110px; margin-bottom: 0px; float: left;}
+  .restaurant_list .list_btm_text span {font-size: 14px; line-height: 28px; width: 62%; float: left;}
+  .restaurant_list .list_btm_text {float: left;}
+  .restaurant_list .list_btm_text span label {color: #222; font-family: "Roboto-Medium"; margin: 0;}
+  .restaurant_list .list_btm_text span a {color: #0babbf; position: relative; padding: 0 0 0 20px;}
+  .restaurant_list .list_btm_text span a:before {position: absolute; content: ''; top: 1px; left: 7px; background: #0babbf; width: 2px; height: 15px;}
+  .restaurant_list .restaurant_list_box {margin: 0 0 30px 0;}
+  .price_section .left_your_order {position: fixed; top: 50px; width: 370px;}
+  .clr {padding: 0px 10px; color: #FFF; border-radius: 10px;}
+  .restaurant_list_content .selectTool {margin-bottom: 30px; padding: 5px; border-radius: 10px; margin-right: 20px; float: right;}
+  .nav_section.mob {opacity: 0; visibility: hidden; position: absolute; top: 0; width: 100%; background: #fff; }
+  .restaurant_list .carousel-item {height: 380px;}
+  .restaurant_list .banner_section .bg-img {float: left; height: 400px; width: 100%;}
+
+  /*custom media css*/
+  @media (max-width:1199px){
+    .banner_center_text {max-width: 990px; margin-top: 150px;}
+    .restaurant_list .main_content .content_section {margin-top: 32%;}    
+    .detail_page .banner_section{height: 135px;}
+    .restaurant_list .rest_list_content .list_heading h4 {width: 70%;}
+    .restaurant_list .list_heading span {width: 25%;}
+    .restaurant_list .list_btm_text span {width: 58%; line-height: 24px;}
+  
+  }
+  
+  @media (max-width:992px){
+    .banner_center_text {max-width: 780px; margin-top: 150px;}
+    .restaurant_list .main_content .content_section {margin-top: 41%;}    
+    .detail_page .banner_section{height: 135px;}
+  }
+  
+  @media (max-width:767px){
+    .banner_center_text{max-width: 520px; padding: 34px;}
+    .detail_page .content_section h1, .time_slot_page .banner_section h1{font-size: 16px;}
+    .restaurant_list .main_content .content_section {margin-top: 56%;}
+    .restaurant_list .list_heading span {width: 14%;}
+    .restaurant_list .list_btm_text span {width: 58%;}
+    }
+  
+  @media (max-width:520px){
+    .restaurant_list .list_heading span {width: 15%;}
+    .restaurant_list .list_btm_text span {width: 58%;}
+    .restaurant_list .banner_section .bg-img {height: 240px;}
+    .banner_center_text {margin-top: 60px;}
+    .banner_content {padding: 34px;}
+    .banner_center_text h1 {font-size: 40px;}
+    .restaurant_list .main_content .content_section {margin-top: 36%;}
+    .restaurant_list_content .selectTool {width: 100%;}
+    .selects {margin-left: 20px;}
+  }
+  
+  @media (max-width:491px) {
+    .restaurant_list .list_heading span {width: 17%;}
+    .restaurant_list .list_btm_text span {width: 58%;}    
+  }
+
+  @media (max-width: 448px) {
+    .restaurant_list .list_heading span {width: 19%;}
+    .restaurant_list .list_btm_text span {width: 58%;}
+  }
+  @media (max-width:415px){
+    .restaurant_list .banner_section .bg-img {height: 210px;}
+    .banner_content{padding: 20px;}
+    .banner_center_text h1 {font-size: 35px; margin-bottom: 10px;}
+    .banner_center_text {margin-top: 20px;}
+    .restaurant_list .list_heading span {width: 21%;}
+    .restaurant_list .list_btm_text span {width: 58%;}
+  }
+  @media (max-width:386px) {
+    .restaurant_list .list_heading span {width: 23%;}
+    .restaurant_list .list_btm_text span {width: 58%;}
+  }
+  @media (max-width:364px) {
+    .restaurant_list .list_heading span {width: 25%;}
+    .restaurant_list .list_btm_text span {width: 50%;}
+    .restaurant_list .banner_section .bg-img {height: 190px;}
+    .banner_center_text {margin-top: 00px;}
+  }
+  /*custom media css end*/
+  

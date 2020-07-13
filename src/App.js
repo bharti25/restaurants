@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Restaurants from '../src/components/Home/Restaurants';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
+import logo from './static/images/logo.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <head>
+        <title>Restaurants</title>
+        <link rel = "icon" href = {logo} type = "image/x-icon"></link>
+      </head> */}
+      <Restaurants />
     </div>
   );
 }
+
+library.add(faSearch)
 
 export default App;
